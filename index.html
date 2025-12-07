@@ -73,7 +73,9 @@
     const manualStatus = "🟢 Online";
 
     // ✅ Ustawianie statusu na stronie
-    document.getElementById("bot-status").textContent = "Status: " + manualStatus;
+    const statusElement = document.getElementById("bot-status");
+    statusElement.textContent = "Status: " + manualStatus;
+    statusElement.style.color = "#ffffff"; // biały kolor
   </script>
 
 </body>
