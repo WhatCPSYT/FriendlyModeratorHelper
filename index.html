@@ -33,13 +33,26 @@
   </header>
 
   <section>
-    <h2>Features</h2>
+    <h2>Main Features</h2>
     <ul>
-      <li>Advanced moderation commands: warn, mute, kick, ban</li>
-      <li>Voice channel mute/deafen with timers</li>
-      <li>Music system with YouTube support</li>
+      <li>Advanced moderation commands: warn, mute, unmute, kick, ban, unban</li>
+      <li>Voice moderation: vcmute, vcunmute, vcdeafen, vcundeafen, vckick</li>
+      <li>Music system with YouTube support (play, pause, resume, stop)</li>
+      <li>Auto-disconnect after inactivity with text-channel notification</li>
       <li>Owner-configurable logging system</li>
-      <li>Professional /help command and status presence</li>
+      <li>Professional /help command and clean presence</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Advanced Features</h2>
+    <ul>
+      <li>Full warning system with history tracking</li>
+      <li>/warnings command showing all warns for a user</li>
+      <li>Logs include: who used the command, target user, reason, and timestamps</li>
+      <li>Automatic unmute/undeafen after timer expires</li>
+      <li>Automatic logging of all moderation and voice actions</li>
+      <li>Safe and reliable timeout-based moderation</li>
     </ul>
   </section>
 
@@ -64,18 +77,10 @@
   </footer>
 
   <script>
-    // ✅ TUTAJ ZMIENIASZ STATUS
-    // Możliwe przykłady:
-    // "🟢 Online"
-    // "🔴 Offline"
-    // "🟡 Restarting"
-    // "🔧 Maintenance"
     const manualStatus = "🟢 Online";
-
-    // ✅ Ustawianie statusu na stronie
     const statusElement = document.getElementById("bot-status");
     statusElement.textContent = "Status: " + manualStatus;
-    statusElement.style.color = "#ffffff"; // biały kolor
+    statusElement.style.color = "#ffffff";
   </script>
 
 </body>
